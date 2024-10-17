@@ -1,0 +1,39 @@
+.sidebar {
+  height: 100vh;
+  flex-direction: row;
+
+  overflow-y: auto;
+  background-color: #f8f9fa; /* Light background */
+  padding-top: 20px;
+}
+
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar .nav-link {
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.sidebar .nav-link:hover {
+  background-color: #e9ecef;
+  color: #007bff;
+}
+
+.sidebar .nav-link .mr-2 {
+  margin-right: 10px;
+}
+
+.sidebar .nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.content-area {
+  margin-left: 250px; /* Adjust this based on the width of your sidebar */
+  width: 100%;
+}

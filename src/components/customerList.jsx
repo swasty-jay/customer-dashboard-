@@ -10,9 +10,9 @@ const CustomerList = () => {
   const filteredCustomers = customers.filter((customer) =>
     customer.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
-  const customerlist = <h3>Customer List</h3>;
+  const custlist = <h3>Customer List</h3>;
   return (
-    <div className="container">
+    <div className="container-fluid">
       <FormControl
         type="text"
         placeholder="Search customers..."

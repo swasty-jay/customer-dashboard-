@@ -11,13 +11,13 @@ const FilterBar = ({ filterStatus }) => {
   };
 
   return (
-    <Container className="mb-4">
+    <div className="mb-4 mt-4 justify-content-end">
       <Form.Select value={selectedStatus} onChange={handleFilter}>
         <option value="All">All</option>
         <option value="Active">Active</option>
         <option value="Inactive">Inactive</option>
       </Form.Select>
-    </Container>
+    </div>
   );
 };
 

@@ -7,7 +7,7 @@ const MyNavbar = () => {
     <Navbar bg="dark" expand="lg" className="mb-4">
       <Container>
         <Navbar.Brand href="#" className="text-light text-touppercase">
-          Organized
+          ORGANIZED
         </Navbar.Brand>
         <Form className="d-flex ms-auto">
           <FormControl type="search" placeholder="Search..." className="me-2" />

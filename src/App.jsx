@@ -4,6 +4,9 @@ import MyNavbar from "./components/navbar";
 import CustomerList from "./components/customerList";
 import FilterBar from "./components/filterBar";
 import { Container } from "react-bootstrap";
+import Sidebar from "./components/HorizontalNavCard.jsx";
+import tabs from "./components/tabs.jsx";
+import UnderlineNav from "./components/tabs.jsx";
 
 function App() {
   const [statusFilter, setStatusFilter] = useState("All");
@@ -13,12 +16,16 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App container-fluid">
       <MyNavbar />
-      <Container>
+      <UnderlineNav />
+
+      <Sidebar />
+      <div>
+        {<custlist />}
         <FilterBar filterStatus={filterStatus} />
         <CustomerList statusFilter={statusFilter} />
-      </Container>
+      </div>
     </div>
   );
 }
