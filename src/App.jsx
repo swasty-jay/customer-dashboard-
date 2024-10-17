@@ -17,13 +17,10 @@ function App() {
 
   return (
     <div className="App container-fluid">
-      <MyNavbar />
-      <UnderlineNav />
-
+      <MyNavbar /> <UnderlineNav />
       <Sidebar />
-      <div>
-        {<custlist />}
-        <FilterBar filterStatus={filterStatus} />
+      <FilterBar filterStatus={filterStatus} />
+      <div className="card">
         <CustomerList statusFilter={statusFilter} />
       </div>
     </div>

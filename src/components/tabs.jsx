@@ -3,28 +3,48 @@ import React from "react";
 
 const UnderlineNav = () => {
   return (
-    <ul className="nav nav-underline">
-      <li className="nav-item">
-        <a className="nav-link active" aria-current="page" href="#">
-          Active
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mt-0">
+      <div class="container-fluid py-0">
+        <a class="navbar-brand" href="#">
+          Dashboard
         </a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">
-          Link
-        </a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link" href="#">
-          Link
-        </a>
-      </li>
-      <li className="nav-item">
-        <a className="nav-link disabled" aria-disabled="true">
-          Disabled
-        </a>
-      </li>
-    </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                Statistic
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Products
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Customer
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-disabled="page">
+                Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
 };
 

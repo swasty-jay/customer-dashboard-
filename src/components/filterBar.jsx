@@ -11,7 +11,7 @@ const FilterBar = ({ filterStatus }) => {
   };
 
   return (
-    <div className="mb-4 mt-4 justify-content-end">
+    <div className="py-4 justify-content-end">
       <Form.Select value={selectedStatus} onChange={handleFilter}>
         <option value="All">All</option>
         <option value="Active">Active</option>

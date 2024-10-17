@@ -13,48 +13,56 @@ import {
 
 const HorizontalNavCard = () => {
   return (
-    <Card className="shadow-sm">
-      <Card.Body>
-        <Nav className="justify-content-center" variant="pills">
-          <Nav.Item className="mx-2">
-            <Nav.Link href="#dashboard">
-              <FaTachometerAlt className="mr-2" />
-              Dashboard
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="mx-2">
-            <Nav.Link href="#statistic">
-              <FaChartBar className="mr-2" />
-              Statistic
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="mx-2">
-            <Nav.Link href="#product">
-              <FaBox className="mr-2" />
-              Product
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="mx-2">
-            <Nav.Link href="#customer">
-              <FaUsers className="mr-2" />
-              Customer
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="mx-2">
-            <Nav.Link href="#review">
-              <FaStar className="mr-2" />
-              Review
-            </Nav.Link>
-          </Nav.Item>
-          <Nav.Item className="mx-2">
-            <Nav.Link href="#settings">
-              <FaCog className="mr-2" />
-              Settings
-            </Nav.Link>
-          </Nav.Item>
-        </Nav>
-      </Card.Body>
-    </Card>
+    <div class="row py-2">
+      <div class="col-sm-3 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Total customers</h5>
+            <hr />
+            <p class="card-text">
+              <strong>470</strong> <span>last week</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Team plan</h5>
+            <hr />
+            <p class="card-text">
+              <strong>17</strong> <span>last week</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3 mb-3 mb-sm-0">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Basic plan</h5>
+            <hr />
+            <p class="card-text">
+              {" "}
+              <strong>30</strong> <span>last week</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Paleghan berhenti</h5>
+            <hr />
+            <p class="card-text">
+              <strong>137</strong> <span>last week</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
