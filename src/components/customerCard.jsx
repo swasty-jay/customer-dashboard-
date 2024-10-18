@@ -6,7 +6,7 @@ import { Card, Button, Col } from "react-bootstrap";
 const CustomerCard = ({ customer }) => {
   return (
     <Col md={12} className="mb-3">
-      <Card className="h-100 shadow-sm p-3">
+      <div className="h-100 shadow-sm mb-2">
         <div className="d-flex justify-content-between align-items-start">
           {/* Customer Info */}
           <div className="customer-info">
@@ -45,7 +45,7 @@ const CustomerCard = ({ customer }) => {
             </span>
           </div>
         </div>
-      </Card>
+      </div>
     </Col>
   );
 };
