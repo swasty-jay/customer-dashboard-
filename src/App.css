@@ -1,9 +1,0 @@
-.navbar-nav {
-  flex-direction: row;
-  justify-content: flex-start; /* Align items to the left */
-  width: 100%; /* Full width to make sure it spans the container */
-}
-
-.navbar-nav .nav-item {
-  margin-right: 15px;
-}

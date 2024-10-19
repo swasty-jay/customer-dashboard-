@@ -11,7 +11,7 @@ const FilterBar = ({ filterStatus }) => {
   };
 
   return (
-    <div className="py-4  col-md-4 offset-md-4 ">
+    <div className="py-4  col-md-4 offset-md-4  col align-self-end">
       <Form.Select value={selectedStatus} onChange={handleFilter}>
         <option value="All">All</option>
         <option value="Active">Active</option>

@@ -5,7 +5,7 @@ import CustomerList from "./components/customerList";
 import FilterBar from "./components/filterBar";
 import { Container } from "react-bootstrap";
 import Sidebar from "./components/HorizontalNavCard.jsx";
-// import tabs from "./components/tabs.jsx";
+import "./index.css";
 
 function App() {
   const [statusFilter, setStatusFilter] = useState("All");

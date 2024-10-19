@@ -8,14 +8,14 @@ const MyNavbar = () => {
     <>
       <Navbar bg="dark" expand="lg" className="">
         <Container>
-          <Navbar.Brand href="#" className="text-light text-touppercase">
+          <Navbar.Brand href="#" className="text-light ">
             ORGANIZED
           </Navbar.Brand>
-          <Form className="d-flex ms-auto">
+          <Form className="d-flex col-sm-1 me-auto ">
             <FormControl
               type="search"
               placeholder="Search..."
-              className="me-2"
+              className="me-1"
             />
           </Form>
           <div className="user-menu ms-3 text-light">User Icon</div>
