@@ -5,8 +5,7 @@ import CustomerList from "./components/customerList";
 import FilterBar from "./components/filterBar";
 import { Container } from "react-bootstrap";
 import Sidebar from "./components/HorizontalNavCard.jsx";
-import tabs from "./components/tabs.jsx";
-import UnderlineNav from "./components/tabs.jsx";
+// import tabs from "./components/tabs.jsx";
 
 function App() {
   const [statusFilter, setStatusFilter] = useState("All");
@@ -17,7 +16,7 @@ function App() {
 
   return (
     <div className="App container-fluid">
-      <MyNavbar /> <UnderlineNav />
+      <MyNavbar />
       <Sidebar />
       <FilterBar filterStatus={filterStatus} />
       <div className="card">

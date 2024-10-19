@@ -1,14 +1,7 @@
 // src/components/HorizontalNavCard.jsx
 import React from "react";
 import { Card, Nav } from "react-bootstrap";
-import {
-  FaTachometerAlt,
-  FaChartBar,
-  FaBox,
-  FaUsers,
-  FaStar,
-  FaCog,
-} from "react-icons/fa";
+
 // import "./HorizontalNavCard.css"; // Import custom styles if needed
 
 const HorizontalNavCard = () => {
