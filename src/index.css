@@ -4,6 +4,15 @@
   width: 100%; /* Full width to make sure it spans the container */
 }
 
-.navbar-nav .nav-item {
-  margin-right: 15px;
+.navbar-nav .nav-item,
+.navbar-brand {
+  margin-right: 70px;
+  font-size: large;
+  font-weight: bold;
+}
+.navbar-nav .nav-item:hover {
+  text-decoration: underline;
+}
+.filterbar {
+  padding-right: 30px !important;
 }

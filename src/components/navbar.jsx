@@ -1,12 +1,13 @@
 // src/components/Navbar.jsx
 import React from "react";
 import { Container, Navbar, Form, FormControl } from "react-bootstrap";
+
 // import "./app.css";
 
 const MyNavbar = () => {
   return (
     <>
-      <Navbar bg="dark" expand="lg" className="">
+      <Navbar bg="dark" expand="lg">
         <Container>
           <Navbar.Brand href="#" className="text-light ">
             ORGANIZED
@@ -18,7 +19,14 @@ const MyNavbar = () => {
               className="me-1"
             />
           </Form>
-          <div className="user-menu ms-3 text-light">User Icon</div>
+          {/* User Avatar */}
+          <img
+            src="https://via.placeholder.com/30" // Replace with actual avatar URL
+            alt="User Avatar"
+            className="rounded-circle"
+            width="30"
+            height="30"
+          />
         </Container>
       </Navbar>
       {/* SECOND NAVBAR */}

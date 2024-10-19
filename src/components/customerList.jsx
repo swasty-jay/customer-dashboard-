@@ -10,7 +10,7 @@ const CustomerList = () => {
   const filteredCustomers = customers.filter((customer) =>
     customer.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
-  const custlist = <h3>Customer List</h3>;
+
   return (
     <div className="container-fluid">
       {/* <FormControl

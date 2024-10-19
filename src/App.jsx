@@ -19,7 +19,7 @@ function App() {
       <MyNavbar />
       <Sidebar />
       <FilterBar filterStatus={filterStatus} />
-      <div className="card">
+      <div>
         <CustomerList statusFilter={statusFilter} />
       </div>
     </div>

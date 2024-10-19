@@ -6,7 +6,7 @@ import { Card, Nav } from "react-bootstrap";
 
 const HorizontalNavCard = () => {
   return (
-    <div class="row py-2">
+    <div class="row py-2 container-fluid">
       <div class="col-sm-3 mb-3 mb-sm-0">
         <div class="card">
           <div class="card-body">
@@ -47,7 +47,7 @@ const HorizontalNavCard = () => {
       <div class="col-sm-3">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Paleghan berhenti</h5>
+            <h5 class="card-title">Premium plan</h5>
             <hr />
             <p class="card-text">
               <strong>137</strong> <span>last week</span>
