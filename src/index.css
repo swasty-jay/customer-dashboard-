@@ -16,3 +16,12 @@
 .filterbar {
   padding-right: 30px !important;
 }
+
+.vertical-line {
+  width: 1px;
+  height: 30px;
+  background-color: white;
+  border: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
