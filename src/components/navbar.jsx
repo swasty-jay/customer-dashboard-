@@ -1,4 +1,6 @@
 // src/components/Navbar.jsx
+
+import { useState } from "react"; // Import useState for handling language change
 import React from "react";
 import {
   Navbar,
@@ -8,8 +10,16 @@ import {
   Dropdown,
 } from "react-bootstrap";
 import { IoPersonCircleSharp, IoNotificationsSharp } from "react-icons/io5"; // Importing Ionicons icons
+import Flag from "react-world-flags"; // Import react-world-flags
 
 const MyNavbar = () => {
+  const [language, setLanguage] = useState("ENG");
+
+  const handleSelect = (lang) => {
+    setLanguage(lang);
+    // Handle language change logic (e.g., i18n setup)
+    // console.log("Selected language: ", lang);
+  };
   return (
     <>
       <Navbar bg="dark" expand="lg">
@@ -73,9 +83,24 @@ const MyNavbar = () => {
                 </a>
               </li>
             </ul>
+            <Dropdown onSelect={handleSelect} className="ms-3">
+              <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                {language}
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item eventKey="English">English</Dropdown.Item>
+                <Dropdown.Item eventKey="Spanish">Spanish</Dropdown.Item>
+                <Dropdown.Item eventKey="French">French</Dropdown.Item>
+                <Dropdown.Item eventKey="German">German</Dropdown.Item>
+                {/* Add more languages as needed */}
+              </Dropdown.Menu>
+            </Dropdown>
           </div>
         </div>
       </nav>
+
+      {/* DROPDOWN MENU */}
     </>
   );
 };
