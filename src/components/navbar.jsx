@@ -1,6 +1,12 @@
 // src/components/Navbar.jsx
 import React from "react";
-import { Navbar, Container, Form, FormControl } from "react-bootstrap";
+import {
+  Navbar,
+  Container,
+  Form,
+  FormControl,
+  Dropdown,
+} from "react-bootstrap";
 import { IoPersonCircleSharp, IoNotificationsSharp } from "react-icons/io5"; // Importing Ionicons icons
 
 const MyNavbar = () => {
@@ -19,11 +25,12 @@ const MyNavbar = () => {
             </div>{" "}
             {/* Username */}
           </Navbar.Brand>
-          <Form className="d-flex col-sm-1 me-auto">
+          <Form className="d-flex col-sm-1 me-auto text-light">
             <FormControl
               type="search"
-              placeholder="Search..."
-              className="me-1"
+              placeholder="🔍 Search..." // Add a search icon before the placeholder text
+              className="me-1 bg-dark border-1 rounded-pill"
+              style={{ color: "white" }} // Ensures placeholder text is white
             />
           </Form>
 
