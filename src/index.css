@@ -25,3 +25,81 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+
+/* Dashboard container */
+.dashboard-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Summary cards grid */
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards */
+  gap: 20px;
+}
+
+/* Individual card styling */
+.card {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h4 {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #00b300; /* green color for percentage */
+}
+
+/* Customer list section */
+.customer-list {
+  margin-top: 20px;
+}
+
+.customer-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Filter buttons */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filters input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #000;
+  margin: 20px 0;
+}

@@ -13,13 +13,23 @@ import { IoPersonCircleSharp, IoNotificationsSharp } from "react-icons/io5"; // 
 import Flag from "react-world-flags"; // Import react-world-flags
 
 const MyNavbar = () => {
-  const [language, setLanguage] = useState("ENG");
+  const [language, setLanguage] = useState({
+    label: "English",
+    flagCode: "GB", // Default flag code for English (United Kingdom)
+  });
 
-  const handleSelect = (lang) => {
-    setLanguage(lang);
-    // Handle language change logic (e.g., i18n setup)
-    // console.log("Selected language: ", lang);
+  const handleSelect = (eventKey) => {
+    const languageMap = {
+      English: { label: "English", flagCode: "GB" },
+      Spanish: { label: "Spanish", flagCode: "ES" },
+      French: { label: "French", flagCode: "FR" },
+      German: { label: "German", flagCode: "DE" },
+    };
+
+    setLanguage(languageMap[eventKey]);
+    // console.log("Selected language: ", eventKey);
   };
+
   return (
     <>
       <Navbar bg="dark" expand="lg">
@@ -39,8 +49,8 @@ const MyNavbar = () => {
             <FormControl
               type="search"
               placeholder="🔍 Search..." // Add a search icon before the placeholder text
-              className="me-1 bg-dark border-1 rounded-pill"
-              style={{ color: "white" }} // Ensures placeholder text is white
+              className="me-1  border-1 "
+              style={{ color: "dark" }} // Ensures placeholder text is white
             />
           </Form>
 
@@ -83,17 +93,27 @@ const MyNavbar = () => {
                 </a>
               </li>
             </ul>
-            <Dropdown onSelect={handleSelect} className="ms-3">
+
+            {/* Language Dropdown positioned at the far right */}
+            <Dropdown onSelect={handleSelect} className="ms-auto">
               <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                {language}
+                <Flag code={language.flagCode} height="16" className="me-2" />
+                {language.label}
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item eventKey="English">English</Dropdown.Item>
-                <Dropdown.Item eventKey="Spanish">Spanish</Dropdown.Item>
-                <Dropdown.Item eventKey="French">French</Dropdown.Item>
-                <Dropdown.Item eventKey="German">German</Dropdown.Item>
-                {/* Add more languages as needed */}
+                <Dropdown.Item eventKey="English">
+                  <Flag code="GB" height="16" className="me-2" /> English
+                </Dropdown.Item>
+                <Dropdown.Item eventKey="Spanish">
+                  <Flag code="ES" height="16" className="me-2" /> Spanish
+                </Dropdown.Item>
+                <Dropdown.Item eventKey="French">
+                  <Flag code="FR" height="16" className="me-2" /> French
+                </Dropdown.Item>
+                <Dropdown.Item eventKey="German">
+                  <Flag code="DE" height="16" className="me-2" /> German
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>
