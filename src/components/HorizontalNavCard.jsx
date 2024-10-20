@@ -79,7 +79,7 @@ const Dashboard = () => {
       {/* Summary Cards */}
       <div className="summary-cards">
         {summaryData.map((data, index) => (
-          <div className="card" key={index}>
+          <div className="card style=width: 18rem;" key={index}>
             <h4>{data.label}</h4> <hr />
             <h1>{data.count}</h1>
             <p>{data.change}</p>
@@ -91,11 +91,12 @@ const Dashboard = () => {
       <div className="customer-list">
         <h2>Customer List</h2>
         {/* Filters */}
-        <div className="filters">
-          <button>All time</button>
-          <button>Team plan</button>
-          <button>Active</button>
-          <button>More filters</button>
+        <div className="filters hstack gap-3">
+          <button className="p-2">All time</button>
+          <button className="p-2 ms-auto">All time</button>
+
+          <button className="p-2">Active</button>
+          <button className="p-2">More filters</button>
           <input type="text" placeholder="Search" />
         </div>
 

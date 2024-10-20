@@ -57,7 +57,7 @@ const MyNavbar = () => {
           {/* User menu with notification bell and avatar icon */}
           <div className="user-menu ms-3 text-light d-flex align-items-center">
             {/* Notification Bell Icon */}
-            <IoNotificationsSharp size={30} className="me-2" color="white" />
+            <IoNotificationsSharp size={30} className="me-2  " color="white" />
 
             {/* IoPersonCircleSharp Icon from react-icons */}
             <IoPersonCircleSharp size={40} color="white" />

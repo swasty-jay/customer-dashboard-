@@ -6,11 +6,11 @@ import { Card, Button, Col } from "react-bootstrap";
 const CustomerCard = ({ customer }) => {
   return (
     <>
-      <div className="py-1 px-2 container-fluid">
-        <div className="h-100 shadow-sm mb-2">
-          <div className="d-flex justify-content-between align-items-start">
+      <div className="py-1 vstack gap-3">
+        <div className="h-100 shadow-sm mb-2 p-2">
+          <div className="d-flex justify-content-between align-items-start ">
             {/* Customer Info */}
-            <div className="customer-info">
+            <div className="customer-info ">
               <h5 className="mb-1">{customer.name}</h5>
               <p className="text-muted mb-1">{customer.email}</p>
             </div>
