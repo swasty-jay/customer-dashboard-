@@ -7,7 +7,35 @@ import { Card, Nav } from "react-bootstrap";
 const Dashboard = () => {
   return (
     <>
-      <div class="row py-5 container-fluid">
+      <div className="calender">
+        {/* <div>
+          <h2 className="customerNav">customer</h2>
+        </div> */}
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-end">
+            <li class="page-item px-2 ">
+              <a class="page-link" href="#">
+                ⬇
+              </a>
+            </li>
+
+            <li class="page-item px-2">
+              <a class="page-link text-dark" href="#">
+                <strong> May,12 2024</strong>
+              </a>
+            </li>
+            <li class="page-item px-2 ">
+              <a class="page-link text-dark bg-danger" href="#">
+                <strong>Add Customer +</strong>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      {/* CALENDER SECTION ABOVE */}
+      <div class="row py-4 container-fluid">
         <div class="col-sm-3 mb-3 mb-sm-0">
           <div class="card">
             <div class="card-body">

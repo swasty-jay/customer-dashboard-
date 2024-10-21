@@ -7,7 +7,7 @@ const CustomerCard = ({ customer }) => {
   return (
     <>
       <table class="table table-striped table-hover  ">
-        <thead className="table-secondary">
+        <thead className="table-warning">
           <tr>
             <th scope="col">FULL NAME-EMAIL</th>
             <th scope="col">BILLING DATE</th>
@@ -57,7 +57,7 @@ const CustomerCard = ({ customer }) => {
         </tbody>
       </table>
 
-      <nav aria-label="Page navigation example py-4">
+      <nav aria-label="Page navigation example py-4 text-dark">
         <ul class="pagination justify-content-end">
           <li class="page-item ">
             <a class="page-link text-dark" href="#">
@@ -65,32 +65,32 @@ const CustomerCard = ({ customer }) => {
             </a>
           </li>
           <li class="page-item px-2">
-            <a class="page-link" href="#">
+            <a class="page-link text-dark" href="#">
               1
             </a>
           </li>
           <li class="page-item px-2">
-            <a class="page-link" href="#">
+            <a class="page-link text-dark" href="#">
               2
             </a>
           </li>
           <li class="page-item">
-            <a class="page-link" href="#">
+            <a class="page-link text-dark" href="#">
               3
             </a>
           </li>
           <li class="page-item px-2">
-            <a class="page-link" href="#">
+            <a class="page-link text-dark" href="#">
               __
             </a>
           </li>
           <li class="page-item">
-            <a class="page-link" href="#">
+            <a class="page-link text-dark" href="#">
               8
             </a>
           </li>
           <li class="page-item px-2">
-            <a class="page-link" href="#">
+            <a class="page-link text-dark" href="#">
               9
             </a>
           </li>

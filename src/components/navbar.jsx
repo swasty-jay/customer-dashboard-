@@ -41,7 +41,7 @@ const MyNavbar = () => {
           <Navbar.Brand href="#" className="text-light">
             ORGANIZED
             <div style={{ fontSize: "0.7rem", fontWeight: "lighter" }}>
-              swasty jay
+              amekpoagbe daniel yawson
             </div>{" "}
             {/* Username */}
           </Navbar.Brand>
