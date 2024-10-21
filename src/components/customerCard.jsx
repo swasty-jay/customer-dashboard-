@@ -6,7 +6,7 @@ import { Card, Button, Col } from "react-bootstrap";
 const CustomerCard = ({ customer }) => {
   return (
     <>
-      <table class="table">
+      <table class="table table-striped table-hover  ">
         <thead className="table-secondary">
           <tr>
             <th scope="col">FULL NAME-EMAIL</th>
@@ -15,9 +15,10 @@ const CustomerCard = ({ customer }) => {
             <th scope="col">AMOUNT</th>
             <th scope="col">TOTAL USERS</th>
             <th scope="col">DETAILS</th>
+            <th scope="col"></th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="table-group-devider">
           {/* Map over customers to generate rows */}
           {customers.map((customer, index) => (
             <tr key={index}>
@@ -38,6 +39,7 @@ const CustomerCard = ({ customer }) => {
               </td>
               <td>
                 <h5 className="mb-1">${customer.amount}/year</h5>
+                <p className="text-muted mb-1">{customer.salaryStatus}</p>
               </td>
               <td>
                 <h5 className="mb-1">{customer.totalUsers} Users</h5>
@@ -45,11 +47,60 @@ const CustomerCard = ({ customer }) => {
               <td>
                 <a href="#">View Details</a>
               </td>
+              <td>
+                <span className="mt-0">
+                  <strong>...</strong>
+                </span>
+              </td>
             </tr>
           ))}
         </tbody>
       </table>
 
+      <nav aria-label="Page navigation example py-4">
+        <ul class="pagination justify-content-end">
+          <li class="page-item ">
+            <a class="page-link text-dark" href="#">
+              ⬅Previous
+            </a>
+          </li>
+          <li class="page-item px-2">
+            <a class="page-link" href="#">
+              1
+            </a>
+          </li>
+          <li class="page-item px-2">
+            <a class="page-link" href="#">
+              2
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              3
+            </a>
+          </li>
+          <li class="page-item px-2">
+            <a class="page-link" href="#">
+              __
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              8
+            </a>
+          </li>
+          <li class="page-item px-2">
+            <a class="page-link" href="#">
+              9
+            </a>
+          </li>
+          <li class="page-item ">
+            <a class="page-link text-dark" href="#">
+              Next➡
+            </a>
+          </li>
+        </ul>
+      </nav>
       {/* <table class="table">
         <thead>
           <tr>
