@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, FormControl } from "react-bootstrap";
 import { customers } from "../data.js";
-import CustomerCard from "./CustomerCard";
+// import CustomerCard from "./CustomerCard";
 
 const CustomerList = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -20,13 +20,13 @@ const CustomerList = () => {
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
       /> */}
-      <Row>
+      {/* <Row>
         {filteredCustomers.map((customer) => (
           <Col key={customer.id} lg={12}>
-            <CustomerCard customer={customer} />
+            
           </Col>
         ))}
-      </Row>
+      </Row> */}
     </div>
   );
 };

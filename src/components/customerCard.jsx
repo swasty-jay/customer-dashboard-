@@ -6,48 +6,100 @@ import { Card, Button, Col } from "react-bootstrap";
 const CustomerCard = ({ customer }) => {
   return (
     <>
-      <div className="py-1 vstack gap-3">
-        <div className="h-100 shadow-sm mb-2 p-2">
-          <div className="d-flex justify-content-between align-items-start ">
-            {/* Customer Info */}
-            <div className="customer-info ">
+      <table class="table">
+        <thead className="table-secondary">
+          <tr>
+            <th scope="col">FULL NAME-EMAIL</th>
+            <th scope="col">BILLING DATE</th>
+            <th scope="col">PLAN</th>
+            <th scope="col">AMOUNT</th>
+            <th scope="col">TOTAL USERS</th>
+            <th scope="col">DETAILS</th>
+          </tr>
+        </thead>
+        <tbody>
+          {/* Map over customers to generate rows */}
+          {customers.map((customer, index) => (
+            <tr key={index}>
+              <td>
+                <h5 className="mb-1">{customer.name}</h5>
+                <p className="text-muted mb-1">{customer.email}</p>
+              </td>
+              <td>
+                <h5 className="mb-1">{customer.billingDate}</h5>
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger rounded-pill"
+                >
+                  TEAM
+                </button>
+              </td>
+              <td>
+                <h5 className="mb-1">${customer.amount}/year</h5>
+              </td>
+              <td>
+                <h5 className="mb-1">{customer.totalUsers} Users</h5>
+              </td>
+              <td>
+                <a href="#">View Details</a>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      {/* <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">FULL NAME-EMAIL</th>
+            <th scope="col">BILLING DATE</th>
+            <th scope="col">PLAN</th>
+            <th scope="col">AMOUNT</th>
+            <th scope="col">TOTAL USERS</th>
+            <th scope="col">DETAILS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>
+              {" "}
               <h5 className="mb-1">{customer.name}</h5>
-              <p className="text-muted mb-1">{customer.email}</p>
-            </div>
-
-            {/* Billing and Plan Info */}
-
-            <div className="billing-info">
+            </td>
+            <p className="text-muted mb-1">{customer.email}</p>
+            <td>
               <h5 className="mb-1">{customer.billingDate}</h5>
-              <p className="text-muted mb-1">{customer.billingDate}</p>
-            </div>
-
-            <div className="plan">
+            </td>
+            <p className="text-muted mb-1">{customer.billingDate}</p>
+            <td>
+              {" "}
               <button type="button" class="btn btn-outline-danger rounded-pill">
                 TEAM
               </button>
-            </div>
-
-            <div className="amount-info">
+            </td>
+            <td>
               <h5 className="mb-1">${customer.amount}/year</h5>
-              <p className="text-muted mb-1">{customer.salaryStatus}</p>
-            </div>
-
-            <div className="total-users-info">
+            </td>
+            <p className="text-muted mb-1">{customer.salaryStatus}</p>
+            <td>
+              {" "}
               <h5 className="mb-1">{customer.totalUsers} Users</h5>
-            </div>
-            <div className="d-flex justify-content-end mt-3">
+            </td>
+            <td>
+              {" "}
               <a href="#">View Details</a>
-            </div>
-
-            <div className="d-flex justify-content-end mt-3">
+            </td>
+            <td>
+              {" "}
               <span className="mt-0">
                 <strong>...</strong>
               </span>
-            </div>
-          </div>
-        </div>
-      </div>
+            </td>
+          </tr>
+        </tbody>
+      </table> */}
     </>
   );
 };

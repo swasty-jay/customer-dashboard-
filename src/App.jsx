@@ -7,6 +7,7 @@ import { Container } from "react-bootstrap";
 import Sidebar from "./components/HorizontalNavCard.jsx";
 import "./index.css";
 import Dashboard from "./components/HorizontalNavCard.jsx";
+import CustomerCard from "./components/customerCard.jsx";
 
 function App() {
   const [statusFilter, setStatusFilter] = useState("All");
@@ -19,10 +20,11 @@ function App() {
     <div className="App container-fluid">
       <MyNavbar />
       <Sidebar />
-
+      <CustomerCard />
+      {/* 
       <div>
         <CustomerList statusFilter={statusFilter} />
-      </div>
+      </div> */}
     </div>
   );
 }
